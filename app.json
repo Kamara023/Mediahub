@@ -12,6 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "experimental": {
+      "bridgeless": false
+    },
     "ios": {
       "supportsTablet": true
     },
