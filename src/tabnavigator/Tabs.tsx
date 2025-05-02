@@ -5,9 +5,9 @@ import { Ionicons } from '@expo/vector-icons';
 import Home from './Home';
 import { COLORS } from '../constants/theme';
 import { useNavigation } from '@react-navigation/native';
-import Favoris_Historique from './Favoris_Historique';
 import Profiles from './Profiles';
-import Quiz_Recommandations from './Quiz_Recommandations';
+import Recherche from './Recherche';
+import Favorie from './Favorie';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,11 +23,11 @@ const Tabs = () => {
 
                     if (route.name === 'Home') {
                         iconName = focused ? 'home' : 'home-outline';
-                    } else if (route.name === 'Inbox') {
-                        iconName = focused ? 'mail' : 'mail-outline';
-                    } else if (route.name === 'Notification') {
+                    } else if (route.name === 'Recherche') {
+                        iconName = focused ? 'search' : 'search-outline';
+                    } else if (route.name === 'Favorie') {
                         iconName = focused ? 'notifications' : 'notifications-outline';
-                    } else if (route.name === 'Profile') {
+                    } else if (route.name === 'Profiles') {
                         iconName = focused ? 'person' : 'person-outline';
                     }
 
@@ -53,8 +53,8 @@ const Tabs = () => {
             })}
         >
             <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name="Favoris_Historique" component={Favoris_Historique} />
-            <Tab.Screen name="Quiz_Recommandations" component={Quiz_Recommandations} />
+            <Tab.Screen name="Recherche" component={Recherche} />
+            <Tab.Screen name="Favorie" component={Favorie} />
             <Tab.Screen name="Profiles" component={Profiles} // Tu peux mettre un composant vide ou un écran par défaut
                 listeners={{
                     tabPress: (e) => {

@@ -126,7 +126,7 @@ const Onboarding = ({ navigation }) => {
 
   // Fonction pour gérer le clic sur le bouton Commencer
   const handleGetStarted = () => {
-    navigation.replace('Home'); // Naviguer vers l'écran principal
+    navigation.replace('LoginScreen'); // Naviguer vers l'écran principal
   };
 
   return (
