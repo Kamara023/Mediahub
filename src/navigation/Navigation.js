@@ -10,6 +10,7 @@ import SignUpScreen from '../auth/SignUpScreen';
 import ForgotPasswordScreen from '../auth/ForgotPasswordScreen';
 import DetailScreen from '../screens/DetailScreen';
 import Paramètre from '../screens/Paramètre';
+import ModifierProfile from '../screens/ModifierProfile';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ export default function Navigation() {
             <Stack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen}/>
             <Stack.Screen name="DetailScreen" component={DetailScreen}/>
             <Stack.Screen name="Paramètre" component={Paramètre}/>
+            <Stack.Screen name="ModifierProfile" component={ModifierProfile}/>
 
 
 

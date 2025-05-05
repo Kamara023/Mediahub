@@ -70,7 +70,7 @@ const Profiles = ({ navigation }) => {
   // Fonction pour modifier le profil
   const handleEditProfile = () => {
     // Navigation vers l'écran d'édition de profil
-    navigation.navigate('EditProfile');
+    navigation.navigate('ModifierProfile');
   };
 
   // Rendu des statistiques utilisateur
